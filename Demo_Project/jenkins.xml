@@ -5,7 +5,7 @@
         <listener class-name="com.Demo_Project.Listeners.TestListner"></listener>
     </listeners>
   <test thread-count="5" name="Test">
-	  <parameter name="browser" value="edge"></parameter>
+	  <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.Demo_Project.Base.DemoTestBase"/>
       <class name = "com.Demo_Project.Scripts.LoginTest"/>
