@@ -80,12 +80,12 @@ public class ProductPage {
 	}
 	
 	public void endTour() {
-		WaitUtilities.waitForElementToBeVisible(driver, endtour);
+		WaitUtilities.waitForElementToBeClickable(driver, endtour);
 		PageUtilities.clickOnElement(endtour);
 		
 	}
 	public boolean endTourAssert() {
-		WaitUtilities.waitForElementToBeVisible(driver, nexttour);
+		
 		return nexttour.isDisplayed();
 	}
 	
@@ -129,7 +129,7 @@ public class ProductPage {
 	public void searchItem(String item) {
 		search.clear();
 		search.sendKeys(item);
-		WaitUtilities.fluentWait(driver, srch);
+		WaitUtilities.waitForElementToBeVisible(driver, srch);
 	}
 	public boolean searchAssertion() {
 		return srch.isDisplayed();
@@ -141,7 +141,7 @@ public class ProductPage {
 		PageUtilities.clickOnElement(addBrand);
 	}
 	public boolean selectBrandAssert() {
-		WaitUtilities.fluentWait(driver, addAssert);
+		WaitUtilities.waitForElementToBeVisible(driver, addAssert);
 		return addAssert.isDisplayed();
 	}
 	public void addBrandDetails() {

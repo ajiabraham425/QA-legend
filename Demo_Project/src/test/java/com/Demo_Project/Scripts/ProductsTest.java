@@ -9,7 +9,7 @@ import com.Demo_Project.constants.Constants;
 public class ProductsTest extends DemoTestBase {
 	ProductPage objProduct;
 	
-	@Test(priority=5,retryAnalyzer=com.Demo_Project.Listeners.RetryAnalyser.class,description="Verify to close end tour Window",groups={"smoke"})
+	@Test(priority=5,description="Verify to close end tour Window",groups={"smoke"})
 	public void clickendTour() {
 		  objProduct=new ProductPage(driver);
 		  objProduct.endTour();
