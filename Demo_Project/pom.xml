@@ -123,7 +123,7 @@
     <configuration>
     <testFailureIgnore>true</testFailureIgnore>
      <suiteXmlFiles> 
-       <suiteXmlFile>testng.xml</suiteXmlFile>
+       <suiteXmlFile>jenkins.xml</suiteXmlFile>
         </suiteXmlFiles>
       </configuration>
 		</plugin>
@@ -150,7 +150,7 @@
       <configuration>
        <testFailureIgnore>true</testFailureIgnore>
 <suiteXmlFiles>
-  <suiteXmlFile>testng.xml</suiteXmlFile>
+  <suiteXmlFile>jenkins.xml</suiteXmlFile>
         </suiteXmlFiles>
         </configuration>
 		</plugin>
