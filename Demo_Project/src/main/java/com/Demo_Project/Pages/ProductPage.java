@@ -73,7 +73,7 @@ public class ProductPage {
 	}
 	
 	public void endTour() {
-		WaitUtilities.waitForElementToBeClickable(driver, endtour);
+		WaitUtilities.waitForElementToBeClickable(driver, nexttour);
 		PageUtilities.clickOnElement(endtour);
 		
 	}
