@@ -16,7 +16,7 @@ public class ProductPage {
 	
 	@FindBy(xpath="//button[text()='End tour']")
 	WebElement endtour;
-	@FindBy(xpath="//button[text()='Next »']")
+	@FindBy(xpath="//button[@data-role='next']")
 	WebElement nexttour;
 	
 	@FindBy(xpath="//a[@id='tour_step5_menu']")
