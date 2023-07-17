@@ -12,8 +12,9 @@
       <class name="com.Demo_Project.Base.DemoTestBase"/>
       <class name = "com.Demo_Project.Scripts.LoginTest"/>
       <class name = "com.Demo_Project.Scripts.ProductsTest"/>
-      <class name = "com.Demo_Project.Scripts.PurchaseTest"/>
-      <class name = "com.Demo_Project.Scripts.SettingsTest"/>
+       <class name = "com.Demo_Project.Scripts.PurchaseTest"/>
+        <class name = "com.Demo_Project.Scripts.SettingsTest"/>
+      
       
       
  

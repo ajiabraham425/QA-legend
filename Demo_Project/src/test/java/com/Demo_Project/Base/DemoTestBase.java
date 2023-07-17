@@ -95,6 +95,7 @@ public class DemoTestBase {
 
   @AfterTest
   public void afterTest() {
+	  driver.quit();
   }
 
 }

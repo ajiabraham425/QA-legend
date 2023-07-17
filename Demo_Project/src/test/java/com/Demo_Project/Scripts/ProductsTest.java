@@ -1,5 +1,6 @@
 package com.Demo_Project.Scripts;
 
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.Demo_Project.Base.DemoTestBase;
@@ -34,20 +35,8 @@ public class ProductsTest extends DemoTestBase {
 	  
 	  Assert.assertTrue(objProduct.productTypeAssert());
   }
-  /*
-  @Test(priority=8,description="verify to select an row from table and delete from the table")
-  public void verifyDeletefromTable() {
-	  objProduct=new ProductPage(driver);
-	  objProduct.selectRow();
-  } 
   
-  @Test(priority=9)
-	public void selectVariationsPage() {
-		  objProduct=new ProductPage(driver);
-		  objProduct.selectvariations();	  
-  }*/
-  
-  @Test(priority=10,retryAnalyzer=com.Demo_Project.Listeners.RetryAnalyser.class,description="verify that specific details is sorted by the search",groups={"smoke"})
+  @Test(priority=8,retryAnalyzer=com.Demo_Project.Listeners.RetryAnalyser.class,description="verify that specific details is sorted by the search",groups={"smoke"})
   public void verifySearch() {
 	  
 	  objProduct=new ProductPage(driver);
@@ -55,6 +44,22 @@ public class ProductsTest extends DemoTestBase {
 	  
 	  Assert.assertTrue(objProduct.searchAssertion());
   }
+  
+  @Test(priority=9)
+  public void verifyAddproduct() {
+	  objProduct=new ProductPage(driver);
+	  objProduct.selectAddProduct();
+  }
+  @Test(priority=10)
+  public void verifyImageUpload() {
+	  objProduct=new ProductPage(driver);
+	  objProduct.uploadImage(Constants.phtoUpload);
+	  Assert.assertEquals(objProduct.fileAssert(), "Sign.jpeg");
+	     
+  }
+  
+  
+  
   @Test(priority=11,groups={"smoke"},description="verify that able to navigate brands page and click on Add brand")
   public void verifyBrands() {
 	  objProduct=new ProductPage(driver);
@@ -75,6 +80,7 @@ public class ProductsTest extends DemoTestBase {
 	  objProduct.saveButton();
 	  Assert.assertTrue(objProduct.saveButtonAssert());
   }
+  
   }
   
   

@@ -1,10 +1,13 @@
 package com.Demo_Project.Pages;
 
-import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.Demo_Project.Utilities.FileUploadUtility;
 import com.Demo_Project.Utilities.PageUtilities;
 import com.Demo_Project.Utilities.WaitUtilities;
 
@@ -32,27 +35,13 @@ public class ProductPage {
 	@FindBy(xpath="//a[@class='btn btn-primary pull-right']")
 	WebElement typeAssert;
 	
-	/*
-	@FindBy(xpath="//tr[@class='odd selected']")
-	List<WebElement>rowselection;
-	@FindBy(xpath="//input[@class='row-select' and @value='437']")
-	WebElement boxcheck;
-	@FindBy(xpath="//div[@class='btn-group open']")
-	WebElement actionbtn;
-	@FindBy(id="delete-selected")
-	WebElement deleteRow;
-	@FindBy(className="swal-button swal-button--confirm swal-button--danger")
-	WebElement confirmmsg; 
-	
-	//
-	@FindBy(xpath="//*[@id=\"tour_step5\"]/ul/li[4]/a")
-	WebElement variations;
-	*/
-	
 	@FindBy(xpath="//input[@type='search']")
 	WebElement search;
 	@FindBy(xpath="//tr[@class='odd' and @role='row'][1]")
 	WebElement srch;
+	
+	@FindBy(xpath="//a[text()='Add Product']")
+	WebElement addproduct;
 	
 	@FindBy(xpath="//span[text()='Brands']")
 	WebElement brands;
@@ -71,6 +60,11 @@ public class ProductPage {
 	WebElement brandAssert;
 	@FindBy(xpath="//a[@class='btn buttons-collection btn-info']")
 	WebElement saveAssert;
+	
+	@FindBy(xpath="//div[@class='btn btn-primary btn-file']")
+	WebElement phtoUpload;
+	@FindBy(xpath="//div[@class='form-control file-caption  kv-fileinput-caption']")
+	WebElement fileName;
 	
 	
 	public ProductPage(WebDriver driver)
@@ -108,33 +102,31 @@ public class ProductPage {
 		return typeAssert.isDisplayed();
 	}
 	
-	/*
-	public void selectvariations()
-	{
-		PageUtilities.clickOnElement(variations);
-	} 
 
-	public void selectRow()
-	{
-		for(WebElement objVar:rowselection)
-		{
-			objVar.click();
-		}
-		PageUtilities.clickOnElement(boxcheck);
-		PageUtilities.clickOnElement(actionbtn);
-		PageUtilities.clickOnElement(deleteRow);
-		PageUtilities.clickOnElement(confirmmsg);
-	}
-	*/
 	public void searchItem(String item) {
 		search.clear();
 		search.sendKeys(item);
 		WaitUtilities.waitForElementToBeVisible(driver, srch);
 	}
 	public boolean searchAssertion() {
-		return srch.isDisplayed();
-		
+		return srch.isDisplayed();	
 	}
+	
+	
+	public void selectAddProduct() {
+		PageUtilities.clickOnElement(addproduct);
+		WaitUtilities.waitForElementToBeVisible(driver, addproduct);
+	}
+	public void uploadImage(String path) {
+		PageUtilities.clickOnElement(phtoUpload);
+		FileUploadUtility.uploadFileWithRobot(path);
+	}
+	public String fileAssert() {
+		String fileText=fileName.getText();
+		WaitUtilities.waitForElementToBeVisible(driver, fileName);
+		return fileText;
+	}
+	
 	
 	public void selectBrands() {
 		PageUtilities.clickOnElement(brands);
@@ -159,5 +151,7 @@ public class ProductPage {
 	public boolean saveButtonAssert() {
 		return saveAssert.isDisplayed();
 	}
+	
+	
 	
 	}
