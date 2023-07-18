@@ -49,7 +49,7 @@ public class ProductsTest extends DemoTestBase {
 	  objProduct=new ProductPage(driver);
 	  objProduct.selectAddProduct();
   }
-  @Test(priority=10)
+  @Test(priority=10,retryAnalyzer=com.Demo_Project.Listeners.RetryAnalyser.class)
   public void verifyImageUpload() {
 	  objProduct=new ProductPage(driver);
 	  objProduct.uploadImage(Constants.phtoUpload);
