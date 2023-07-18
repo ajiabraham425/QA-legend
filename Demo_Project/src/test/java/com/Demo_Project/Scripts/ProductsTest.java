@@ -41,7 +41,6 @@ public class ProductsTest extends DemoTestBase {
 	  
 	  objProduct=new ProductPage(driver);
 	  objProduct.searchItem(Constants.searchName);
-	  
 	  Assert.assertTrue(objProduct.searchAssertion());
   }
   
@@ -57,8 +56,6 @@ public class ProductsTest extends DemoTestBase {
 	  Assert.assertEquals(objProduct.fileAssert(), "Sign.jpeg");
 	     
   }
-  
-  
   
   @Test(priority=11,groups={"smoke"},description="verify that able to navigate brands page and click on Add brand")
   public void verifyBrands() {

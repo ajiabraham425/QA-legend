@@ -121,8 +121,8 @@ public class ProductPage {
 		FileUploadUtility.uploadFileWithRobot(path);
 	}
 	public String fileAssert() {
-		String fileText=fileName.getText();
 		WaitUtilities.waitForElementToBeVisible(driver, fileName);
+		String fileText=fileName.getText();
 		return fileText;
 	}
 	
