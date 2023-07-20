@@ -11,47 +11,45 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import com.Demo_Project.constants.Constants;
 
 public class ExcelRead {
-	
+
 	public static FileInputStream f;
 	public static XSSFWorkbook w;
 	public static XSSFSheet sh;
-public static String getCellStringData(int RowNum, int ColNum,String Sheet)  {
-		
+
+	public static String getCellStringData(int RowNum, int ColNum, String Sheet) {
+
 		try {
-			f=new FileInputStream(Constants.CONFIGPATH_EXCELREADER);
+			f = new FileInputStream(Constants.CONFIGPATH_EXCELREADER);
 		} catch (FileNotFoundException e) {
-			 throw new RuntimeException(e);
+			throw new RuntimeException(e);
 		}
 		try {
-			w=new XSSFWorkbook(f);
+			w = new XSSFWorkbook(f);
 		} catch (IOException e) {
-	           throw new RuntimeException(e);
+			throw new RuntimeException(e);
 		}
-		sh=w.getSheet(Sheet);
-Row r=sh.getRow(RowNum)	;
-Cell c=r.getCell(ColNum);
-return c.getStringCellValue();
+		sh = w.getSheet(Sheet);
+		Row r = sh.getRow(RowNum);
+		Cell c = r.getCell(ColNum);
+		return c.getStringCellValue();
 
 	}
-public static int getCellNumericData(int RowNum, int ColNum,String Sheet) 
-{
-	try {
-		f=new FileInputStream(Constants.CONFIGPATH_EXCELREADER);
-	} catch (FileNotFoundException e) {
-           throw new RuntimeException(e);
+
+	public static int getCellNumericData(int RowNum, int ColNum, String Sheet) {
+		try {
+			f = new FileInputStream(Constants.CONFIGPATH_EXCELREADER);
+		} catch (FileNotFoundException e) {
+			throw new RuntimeException(e);
+		}
+
+		try {
+			w = new XSSFWorkbook(f);
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		sh = w.getSheet(Sheet);
+		return (int) sh.getRow(RowNum).getCell(ColNum).getNumericCellValue();
+
 	}
 
-	try {
-		w= new XSSFWorkbook(f);
-	} catch (IOException e) {
-           throw new RuntimeException(e);
-	}
-	sh=w.getSheet(Sheet);
-	return (int) sh.getRow(RowNum).getCell(ColNum).getNumericCellValue();
-	
 }
-
-}
-
-
-

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="8" total="26" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-20T23:38:26 IST" name="Suite" finished-at="2023-07-20T23:39:18 IST" duration-ms="52307">
+    <groups>
+      <group name="smoke">
+        <method signature="LoginTest.verifySigninValidUserValidpass(java.lang.String,int)[pri:4, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" name="verifySigninValidUserValidpass" class="com.Demo_Project.Scripts.LoginTest"/>
+        <method signature="ProductsTest.clickendTour()[pri:5, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="clickendTour" class="com.Demo_Project.Scripts.ProductsTest"/>
+        <method signature="ProductsTest.verifyProducts()[pri:6, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="verifyProducts" class="com.Demo_Project.Scripts.ProductsTest"/>
+        <method signature="ProductsTest.selectProductType()[pri:7, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="selectProductType" class="com.Demo_Project.Scripts.ProductsTest"/>
+        <method signature="ProductsTest.verifySearch()[pri:8, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="verifySearch" class="com.Demo_Project.Scripts.ProductsTest"/>
+        <method signature="ProductsTest.verifyAddproduct()[pri:9, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="verifyAddproduct" class="com.Demo_Project.Scripts.ProductsTest"/>
+        <method signature="ProductsTest.verifyImageUpload()[pri:10, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="verifyImageUpload" class="com.Demo_Project.Scripts.ProductsTest"/>
+        <method signature="ProductsTest.verifyBrands()[pri:11, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="verifyBrands" class="com.Demo_Project.Scripts.ProductsTest"/>
+        <method signature="ProductsTest.verifyAddDetails()[pri:12, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="verifyAddDetails" class="com.Demo_Project.Scripts.ProductsTest"/>
+        <method signature="ProductsTest.verifySaveDetails()[pri:13, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" name="verifySaveDetails" class="com.Demo_Project.Scripts.ProductsTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="PurchaseTest.verifyPurchase()[pri:14, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" name="verifyPurchase" class="com.Demo_Project.Scripts.PurchaseTest"/>
+        <method signature="PurchaseTest.verifyElementTable()[pri:15, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" name="verifyElementTable" class="com.Demo_Project.Scripts.PurchaseTest"/>
+        <method signature="SettingsTest.verifyCheckSettings()[pri:16, instance:com.Demo_Project.Scripts.SettingsTest@248e319b]" name="verifyCheckSettings" class="com.Demo_Project.Scripts.SettingsTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2023-07-20T23:38:26 IST" name="Test" finished-at="2023-07-20T23:39:18 IST" duration-ms="52307">
+      <class name="com.Demo_Project.Scripts.SettingsTest">
+        <test-method signature="verifyCheckSettings()[pri:16, instance:com.Demo_Project.Scripts.SettingsTest@248e319b]" started-at="2023-07-20T23:39:15 IST" name="verifyCheckSettings" description="Verify whether able to Enable Product Expiry checkbox" finished-at="2023-07-20T23:39:18 IST" duration-ms="2570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckSettings -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.SettingsTest@248e319b]" started-at="2023-07-20T23:39:18 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCheckSettings status=SUCCESS method=SettingsTest.verifyCheckSettings()[pri:16, instance:com.Demo_Project.Scripts.SettingsTest@248e319b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.Demo_Project.Scripts.SettingsTest -->
+      <class name="com.Demo_Project.Scripts.ProductsTest">
+        <test-method signature="clickendTour()[pri:5, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:53 IST" name="clickendTour" description="Verify to close end tour Window" finished-at="2023-07-20T23:38:53 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickendTour -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:53 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:38:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickendTour status=SUCCESS method=ProductsTest.clickendTour()[pri:5, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyProducts()[pri:6, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:53 IST" name="verifyProducts" description="verify that page should be navigate to product list page" finished-at="2023-07-20T23:38:56 IST" duration-ms="2448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProducts -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:56 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:38:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProducts status=SUCCESS method=ProductsTest.verifyProducts()[pri:6, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="selectProductType()[pri:7, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:56 IST" name="selectProductType" description="Verify that product type is selected as single from the drop-down" finished-at="2023-07-20T23:38:56 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductType -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:56 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:38:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectProductType status=SUCCESS method=ProductsTest.selectProductType()[pri:7, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifySearch()[pri:8, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:56 IST" name="verifySearch" description="verify that specific details is sorted by the search" finished-at="2023-07-20T23:38:59 IST" duration-ms="2607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearch -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:59 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:38:59 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearch status=SUCCESS method=ProductsTest.verifySearch()[pri:8, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyAddproduct()[pri:9, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:38:59 IST" name="verifyAddproduct" description="verify page should navigate to add product page from list product" finished-at="2023-07-20T23:39:04 IST" duration-ms="5032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddproduct -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:04 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddproduct status=SUCCESS method=ProductsTest.verifyAddproduct()[pri:9, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyImageUpload()[pri:10, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:04 IST" name="verifyImageUpload" description="verify that file is uploading" finished-at="2023-07-20T23:39:07 IST" duration-ms="3579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyImageUpload -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:07 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:07 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyImageUpload status=SUCCESS method=ProductsTest.verifyImageUpload()[pri:10, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyBrands()[pri:11, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:07 IST" name="verifyBrands" description="verify that able to navigate brands page and click on Add brand" finished-at="2023-07-20T23:39:10 IST" duration-ms="2415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrands -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:10 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBrands status=SUCCESS method=ProductsTest.verifyBrands()[pri:11, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyAddDetails()[pri:12, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:10 IST" name="verifyAddDetails" description="verify that able to enter brand name and brand description " finished-at="2023-07-20T23:39:10 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddDetails -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:10 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddDetails status=SUCCESS method=ProductsTest.verifyAddDetails()[pri:12, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifySaveDetails()[pri:13, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:10 IST" name="verifySaveDetails" description="verify that after enter details then able to save" finished-at="2023-07-20T23:39:10 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySaveDetails -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.ProductsTest@27406a17]" started-at="2023-07-20T23:39:10 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySaveDetails status=SUCCESS method=ProductsTest.verifySaveDetails()[pri:13, instance:com.Demo_Project.Scripts.ProductsTest@27406a17] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.Demo_Project.Scripts.ProductsTest -->
+      <class name="com.Demo_Project.Scripts.LoginTest">
+        <test-method signature="verifySigninInvalidUserInvalidpass(java.lang.String,int)[pri:1, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" started-at="2023-07-20T23:38:44 IST" name="verifySigninInvalidUserInvalidpass" description="Verify whether user is able to login with invalid credentials" data-provider="invalidUserInvalidPassword" finished-at="2023-07-20T23:38:46 IST" duration-ms="2033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ajiabraham]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninInvalidUserInvalidpass -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" started-at="2023-07-20T23:38:46 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:38:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySigninInvalidUserInvalidpass status=SUCCESS method=LoginTest.verifySigninInvalidUserInvalidpass(java.lang.String,int)[pri:1, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifySigninInvalidUserValidpass(java.lang.String,int)[pri:2, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" started-at="2023-07-20T23:38:46 IST" name="verifySigninInvalidUserValidpass" description="Verify whether user is able to login with invalid userName valid password" data-provider="invalidUserValidpassword" finished-at="2023-07-20T23:38:48 IST" duration-ms="1566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondoption]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninInvalidUserValidpass -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" started-at="2023-07-20T23:38:48 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:38:48 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySigninInvalidUserValidpass status=SUCCESS method=LoginTest.verifySigninInvalidUserValidpass(java.lang.String,int)[pri:2, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifySigninValidUserInvalidpass(java.lang.String,int)[pri:3, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" started-at="2023-07-20T23:38:48 IST" name="verifySigninValidUserInvalidpass" description="Verify whether user is able to login with valid userName invalid password" data-provider="validUserInvalidPassword" finished-at="2023-07-20T23:38:49 IST" duration-ms="1545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[963852]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninValidUserInvalidpass -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" started-at="2023-07-20T23:38:49 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:38:49 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySigninValidUserInvalidpass status=SUCCESS method=LoginTest.verifySigninValidUserInvalidpass(java.lang.String,int)[pri:3, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifySigninValidUserValidpass(java.lang.String,int)[pri:4, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" started-at="2023-07-20T23:38:49 IST" name="verifySigninValidUserValidpass" description="Verify whether user is able to login with valid credentials" data-provider="validUserValidpassword" finished-at="2023-07-20T23:38:53 IST" duration-ms="3292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySigninValidUserValidpass -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8]" started-at="2023-07-20T23:38:53 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:38:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySigninValidUserValidpass status=SUCCESS method=LoginTest.verifySigninValidUserValidpass(java.lang.String,int)[pri:4, instance:com.Demo_Project.Scripts.LoginTest@76b1e9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.Demo_Project.Scripts.LoginTest -->
+      <class name="com.Demo_Project.Base.DemoTestBase">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.Demo_Project.Base.DemoTestBase@78e4deb0]" started-at="2023-07-20T23:38:26 IST" name="beforeTest" finished-at="2023-07-20T23:38:43 IST" duration-ms="16758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.Demo_Project.Base.DemoTestBase@78e4deb0]" started-at="2023-07-20T23:39:18 IST" name="afterTest" finished-at="2023-07-20T23:39:18 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.Demo_Project.Base.DemoTestBase -->
+      <class name="com.Demo_Project.Scripts.PurchaseTest">
+        <test-method retried="true" signature="verifyPurchase()[pri:14, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" started-at="2023-07-20T23:39:10 IST" name="verifyPurchase" description="Verify that page navigates to purchase page" finished-at="2023-07-20T23:39:11 IST" duration-ms="702" status="SKIP">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8fe446f1a11ae210efe1e00fc2ac803, clickElement {id=4718C786812FBAA6C3955536B73BDDC0_element_161}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\AJIABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54500/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d8fe446f1a11ae210efe1e00fc2ac803)] -> xpath: //a[text()=' List Purchase Return']]
+Session ID: d8fe446f1a11ae210efe1e00fc2ac803]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8fe446f1a11ae210efe1e00fc2ac803, clickElement {id=4718C786812FBAA6C3955536B73BDDC0_element_161}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\AJIABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54500/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d8fe446f1a11ae210efe1e00fc2ac803)] -> xpath: //a[text()=' List Purchase Return']]
+Session ID: d8fe446f1a11ae210efe1e00fc2ac803
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.Demo_Project.Utilities.PageUtilities.clickOnElement(PageUtilities.java:49)
+at com.Demo_Project.Pages.PurchasePage.selectPurchase(PurchasePage.java:47)
+at com.Demo_Project.Scripts.PurchaseTest.verifyPurchase(PurchaseTest.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPurchase -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" started-at="2023-07-20T23:39:11 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:11 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPurchase status=SKIP method=PurchaseTest.verifyPurchase()[pri:14, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method retried="true" signature="verifyPurchase()[pri:14, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" started-at="2023-07-20T23:39:11 IST" name="verifyPurchase" description="Verify that page navigates to purchase page" finished-at="2023-07-20T23:39:12 IST" duration-ms="1299" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (70, 276). Other element would receive the click: <a href="https://qalegend.com/billing/public/purchases">...</a>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8fe446f1a11ae210efe1e00fc2ac803, clickElement {id=4718C786812FBAA6C3955536B73BDDC0_element_157}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\AJIABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54500/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d8fe446f1a11ae210efe1e00fc2ac803)] -> xpath: //span[text()='Purchases']]
+Session ID: d8fe446f1a11ae210efe1e00fc2ac803]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (70, 276). Other element would receive the click: <a href="https://qalegend.com/billing/public/purchases">...</a>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8fe446f1a11ae210efe1e00fc2ac803, clickElement {id=4718C786812FBAA6C3955536B73BDDC0_element_157}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\AJIABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54500/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d8fe446f1a11ae210efe1e00fc2ac803)] -> xpath: //span[text()='Purchases']]
+Session ID: d8fe446f1a11ae210efe1e00fc2ac803
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.Demo_Project.Utilities.PageUtilities.clickOnElement(PageUtilities.java:49)
+at com.Demo_Project.Pages.PurchasePage.selectPurchase(PurchasePage.java:45)
+at com.Demo_Project.Scripts.PurchaseTest.verifyPurchase(PurchaseTest.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPurchase -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" started-at="2023-07-20T23:39:12 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPurchase status=SKIP method=PurchaseTest.verifyPurchase()[pri:14, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyPurchase()[pri:14, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" started-at="2023-07-20T23:39:12 IST" name="verifyPurchase" description="Verify that page navigates to purchase page" finished-at="2023-07-20T23:39:14 IST" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPurchase -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" started-at="2023-07-20T23:39:14 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPurchase status=SUCCESS method=PurchaseTest.verifyPurchase()[pri:14, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyElementTable()[pri:15, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" started-at="2023-07-20T23:39:14 IST" name="verifyElementTable" description="Verify that an element is visible in table" finished-at="2023-07-20T23:39:15 IST" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElementTable -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b]" started-at="2023-07-20T23:39:15 IST" name="takeScreenShotOnFailure" finished-at="2023-07-20T23:39:15 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyElementTable status=SUCCESS method=PurchaseTest.verifyElementTable()[pri:15, instance:com.Demo_Project.Scripts.PurchaseTest@2af004b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+      </class> <!-- com.Demo_Project.Scripts.PurchaseTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

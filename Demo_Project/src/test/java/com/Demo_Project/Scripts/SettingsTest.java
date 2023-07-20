@@ -7,12 +7,11 @@ import com.Demo_Project.Pages.SettingsPage;
 
 public class SettingsTest extends DemoTestBase {
 	SettingsPage objSettings;
-	
-  @Test(priority=16,description="Verify whether able to Enable Product Expiry checkbox")
-  public void verifyCheckSettings() {
-	  objSettings=new SettingsPage(driver);
-	  objSettings.bussinesstngs();
-	  
-	  Assert.assertTrue(objSettings.chechboxAssert());
-  }
+
+	@Test(priority = 16, description = "Verify whether able to Enable Product Expiry checkbox", groups = { "sanity" })
+	public void verifyCheckSettings() {
+		objSettings = new SettingsPage(driver);
+		objSettings.bussinesstngs();
+		Assert.assertTrue(objSettings.chechboxAssert());
+	}
 }
