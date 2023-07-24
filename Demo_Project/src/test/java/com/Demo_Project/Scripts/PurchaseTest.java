@@ -11,7 +11,7 @@ public class PurchaseTest extends DemoTestBase {
 
 	@Test(priority = 14, retryAnalyzer = com.Demo_Project.Listeners.RetryAnalyser.class, groups = {
 			"sanity" }, description = "Verify that page navigates to purchase page")
-	public void verifyPurchase() {
+	public void verifyNagivatetoPurchasePage() {
 		purchase = new PurchasePage(driver);
 		purchase.selectPurchase();
 	}

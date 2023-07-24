@@ -120,7 +120,7 @@
 						<configuration>
 							<testFailureIgnore>true</testFailureIgnore>
 							<suiteXmlFiles>
-								<suiteXmlFile>jenkins.xml</suiteXmlFile>
+								<suiteXmlFile>testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -146,7 +146,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>jenkins.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

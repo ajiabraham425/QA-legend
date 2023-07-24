@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">18 methods,  2 skipped,  16 passed</span>
+                    <span class="method-stats">17 methods,  1 skipped,  16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Retried methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Demo_Project.Scripts.PurchaseTest" class="method navigator-link" hash-for-method="verifyPurchase">verifyPurchase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Demo_Project.Scripts.PurchaseTest" class="method navigator-link" hash-for-method="verifyPurchase">verifyPurchase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.Demo_Project.Scripts.PurchaseTest" class="method navigator-link" hash-for-method="verifyNagivatetoPurchasePage">verifyNagivatetoPurchasePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -162,12 +157,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Demo_Project.Scripts.ProductsTest" class="method navigator-link" hash-for-method="verifyProducts">verifyProducts</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.Demo_Project.Scripts.PurchaseTest" class="method navigator-link" hash-for-method="verifyNagivatetoPurchasePage">verifyNagivatetoPurchasePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.Demo_Project.Scripts.PurchaseTest" class="method navigator-link" hash-for-method="verifyPurchase">verifyPurchase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.Demo_Project.Scripts.ProductsTest" class="method navigator-link" hash-for-method="verifyProducts">verifyProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -220,53 +215,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyPurchase">
-                  </a> <!-- verifyPurchase -->
-                  <span class="method-name">verifyPurchase</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (70, 276). Other element would receive the click: &lt;a href=&quot;https://qalegend.com/billing/public/purchases&quot;&gt;...&lt;/a&gt;
-  (Session info: chrome=114.0.5735.199)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8fe446f1a11ae210efe1e00fc2ac803, clickElement {id=4718C786812FBAA6C3955536B73BDDC0_element_157}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\AJIABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54500/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d8fe446f1a11ae210efe1e00fc2ac803)] -&gt; xpath: //span[text()=&apos;Purchases&apos;]]
-Session ID: d8fe446f1a11ae210efe1e00fc2ac803
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.Demo_Project.Utilities.PageUtilities.clickOnElement(PageUtilities.java:49)
-	at com.Demo_Project.Pages.PurchasePage.selectPurchase(PurchasePage.java:45)
-	at com.Demo_Project.Scripts.PurchaseTest.verifyPurchase(PurchaseTest.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify that page navigates to purchase page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPurchase">
-                  </a> <!-- verifyPurchase -->
-                  <span class="method-name">verifyPurchase</span>
+                  <a name="verifyNagivatetoPurchasePage">
+                  </a> <!-- verifyNagivatetoPurchasePage -->
+                  <span class="method-name">verifyNagivatetoPurchasePage</span>
                   <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=114.0.5735.199)
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8fe446f1a11ae210efe1e00fc2ac803, clickElement {id=4718C786812FBAA6C3955536B73BDDC0_element_161}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\AJIABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54500/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d8fe446f1a11ae210efe1e00fc2ac803)] -&gt; xpath: //a[text()=&apos; List Purchase Return&apos;]]
-Session ID: d8fe446f1a11ae210efe1e00fc2ac803
+Command: [a6b30d4b5b8ad238dc05407fb40a4899, clickElement {id=01ED5F9C19F39B6FC08B543C3455ACB8_element_159}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\AJIABR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59724}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59724/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a6b30d4b5b8ad238dc05407fb40a4899)] -&gt; xpath: //a[text()=&apos; List Purchase Return&apos;]]
+Session ID: a6b30d4b5b8ad238dc05407fb40a4899
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -280,7 +240,7 @@ Session ID: d8fe446f1a11ae210efe1e00fc2ac803
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
 	at com.Demo_Project.Utilities.PageUtilities.clickOnElement(PageUtilities.java:49)
 	at com.Demo_Project.Pages.PurchasePage.selectPurchase(PurchasePage.java:47)
-	at com.Demo_Project.Scripts.PurchaseTest.verifyPurchase(PurchaseTest.java:16)
+	at com.Demo_Project.Scripts.PurchaseTest.verifyNagivatetoPurchasePage(PurchaseTest.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
@@ -290,32 +250,6 @@ Session ID: d8fe446f1a11ae210efe1e00fc2ac803
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Demo_Project.Scripts.PurchaseTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyElementTable">
-                  </a> <!-- verifyElementTable -->
-                  <span class="method-name">verifyElementTable</span>
-                  <em>
-(Verify that an element is visible in table)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPurchase">
-                  </a> <!-- verifyPurchase -->
-                  <span class="method-name">verifyPurchase</span>
-                  <em>
-(Verify that page navigates to purchase page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -329,54 +263,6 @@ Session ID: d8fe446f1a11ae210efe1e00fc2ac803
                   <span class="method-name">verifyCheckSettings</span>
                   <em>
 (Verify whether able to Enable Product Expiry checkbox)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Demo_Project.Scripts.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySigninInvalidUserInvalidpass(ajiabraham, 123456)">
-                  </a> <!-- verifySigninInvalidUserInvalidpass(ajiabraham, 123456) -->
-                  <span class="method-name">verifySigninInvalidUserInvalidpass</span>
-                  <span class="parameters">(ajiabraham,123456)</span>
-                  <em>
-(Verify whether user is able to login with invalid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySigninInvalidUserValidpass(secondoption, 123123)">
-                  </a> <!-- verifySigninInvalidUserValidpass(secondoption, 123123) -->
-                  <span class="method-name">verifySigninInvalidUserValidpass</span>
-                  <span class="parameters">(secondoption,123123)</span>
-                  <em>
-(Verify whether user is able to login with invalid userName valid password)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySigninValidUserInvalidpass(admin, 963852)">
-                  </a> <!-- verifySigninValidUserInvalidpass(admin, 963852) -->
-                  <span class="method-name">verifySigninValidUserInvalidpass</span>
-                  <span class="parameters">(admin,963852)</span>
-                  <em>
-(Verify whether user is able to login with valid userName invalid password)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySigninValidUserValidpass(admin, 123123)">
-                  </a> <!-- verifySigninValidUserValidpass(admin, 123123) -->
-                  <span class="method-name">verifySigninValidUserValidpass</span>
-                  <span class="parameters">(admin,123123)</span>
-                  <em>
-(Verify whether user is able to login with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -470,6 +356,80 @@ Session ID: d8fe446f1a11ae210efe1e00fc2ac803
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Demo_Project.Scripts.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySigninInvalidUserInvalidpass(ajiabraham, 123456)">
+                  </a> <!-- verifySigninInvalidUserInvalidpass(ajiabraham, 123456) -->
+                  <span class="method-name">verifySigninInvalidUserInvalidpass</span>
+                  <span class="parameters">(ajiabraham,123456)</span>
+                  <em>
+(Verify whether user is able to login with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySigninInvalidUserValidpass(secondoption, 123123)">
+                  </a> <!-- verifySigninInvalidUserValidpass(secondoption, 123123) -->
+                  <span class="method-name">verifySigninInvalidUserValidpass</span>
+                  <span class="parameters">(secondoption,123123)</span>
+                  <em>
+(Verify whether user is able to login with invalid userName valid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySigninValidUserInvalidpass(admin, 963852)">
+                  </a> <!-- verifySigninValidUserInvalidpass(admin, 963852) -->
+                  <span class="method-name">verifySigninValidUserInvalidpass</span>
+                  <span class="parameters">(admin,963852)</span>
+                  <em>
+(Verify whether user is able to login with valid userName invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySigninValidUserValidpass(admin, 123123)">
+                  </a> <!-- verifySigninValidUserValidpass(admin, 123123) -->
+                  <span class="method-name">verifySigninValidUserValidpass</span>
+                  <span class="parameters">(admin,123123)</span>
+                  <em>
+(Verify whether user is able to login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Demo_Project.Scripts.PurchaseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyElementTable">
+                  </a> <!-- verifyElementTable -->
+                  <span class="method-name">verifyElementTable</span>
+                  <em>
+(Verify that an element is visible in table)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNagivatetoPurchasePage">
+                  </a> <!-- verifyNagivatetoPurchasePage -->
+                  <span class="method-name">verifyNagivatetoPurchasePage</span>
+                  <em>
+(Verify that page navigates to purchase page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -526,7 +486,7 @@ Session ID: d8fe446f1a11ae210efe1e00fc2ac803
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">verifyPurchase</span>
+                <span class="method-in-group-name">verifyNagivatetoPurchasePage</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -590,84 +550,80 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(18);
+data.addRows(17);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyAddproduct')
 data.setCell(0, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(0, 3, 5032);
+data.setCell(0, 3, 6937);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyImageUpload')
-data.setCell(1, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(1, 3, 3579);
+data.setCell(1, 1, 'verifySigninValidUserValidpass')
+data.setCell(1, 2, 'com.Demo_Project.Scripts.LoginTest')
+data.setCell(1, 3, 5877);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySigninValidUserValidpass')
-data.setCell(2, 2, 'com.Demo_Project.Scripts.LoginTest')
-data.setCell(2, 3, 3292);
+data.setCell(2, 1, 'verifyImageUpload')
+data.setCell(2, 2, 'com.Demo_Project.Scripts.ProductsTest')
+data.setCell(2, 3, 3574);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySearch')
-data.setCell(3, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(3, 3, 2607);
+data.setCell(3, 1, 'verifyCheckSettings')
+data.setCell(3, 2, 'com.Demo_Project.Scripts.SettingsTest')
+data.setCell(3, 3, 3159);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyCheckSettings')
-data.setCell(4, 2, 'com.Demo_Project.Scripts.SettingsTest')
-data.setCell(4, 3, 2570);
+data.setCell(4, 1, 'verifyNagivatetoPurchasePage')
+data.setCell(4, 2, 'com.Demo_Project.Scripts.PurchaseTest')
+data.setCell(4, 3, 3004);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyProducts')
+data.setCell(5, 1, 'verifySearch')
 data.setCell(5, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(5, 3, 2448);
+data.setCell(5, 3, 2576);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyBrands')
 data.setCell(6, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(6, 3, 2415);
+data.setCell(6, 3, 2499);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifySigninInvalidUserInvalidpass')
-data.setCell(7, 2, 'com.Demo_Project.Scripts.LoginTest')
-data.setCell(7, 3, 2033);
+data.setCell(7, 1, 'verifyProducts')
+data.setCell(7, 2, 'com.Demo_Project.Scripts.ProductsTest')
+data.setCell(7, 3, 2489);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyPurchase')
-data.setCell(8, 2, 'com.Demo_Project.Scripts.PurchaseTest')
-data.setCell(8, 3, 1960);
+data.setCell(8, 1, 'verifySigninInvalidUserInvalidpass')
+data.setCell(8, 2, 'com.Demo_Project.Scripts.LoginTest')
+data.setCell(8, 3, 1937);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifySigninInvalidUserValidpass')
 data.setCell(9, 2, 'com.Demo_Project.Scripts.LoginTest')
-data.setCell(9, 3, 1566);
+data.setCell(9, 3, 1849);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifySigninValidUserInvalidpass')
 data.setCell(10, 2, 'com.Demo_Project.Scripts.LoginTest')
-data.setCell(10, 3, 1545);
+data.setCell(10, 3, 1762);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyPurchase')
+data.setCell(11, 1, 'verifyElementTable')
 data.setCell(11, 2, 'com.Demo_Project.Scripts.PurchaseTest')
-data.setCell(11, 3, 1299);
+data.setCell(11, 3, 663);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyPurchase')
+data.setCell(12, 1, 'verifyNagivatetoPurchasePage')
 data.setCell(12, 2, 'com.Demo_Project.Scripts.PurchaseTest')
-data.setCell(12, 3, 702);
+data.setCell(12, 3, 637);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'clickendTour')
 data.setCell(13, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(13, 3, 680);
+data.setCell(13, 3, 538);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyElementTable')
-data.setCell(14, 2, 'com.Demo_Project.Scripts.PurchaseTest')
-data.setCell(14, 3, 665);
+data.setCell(14, 1, 'verifyAddDetails')
+data.setCell(14, 2, 'com.Demo_Project.Scripts.ProductsTest')
+data.setCell(14, 3, 532);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyAddDetails')
+data.setCell(15, 1, 'selectProductType')
 data.setCell(15, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(15, 3, 455);
+data.setCell(15, 3, 417);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'selectProductType')
+data.setCell(16, 1, 'verifySaveDetails')
 data.setCell(16, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(16, 3, 452);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifySaveDetails')
-data.setCell(17, 2, 'com.Demo_Project.Scripts.ProductsTest')
-data.setCell(17, 3, 169);
+data.setCell(16, 3, 203);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -686,25 +642,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.Demo_Project.Scripts.PurchaseTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">com.Demo_Project.Scripts.SettingsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.Demo_Project.Scripts.LoginTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
@@ -714,6 +652,24 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.Demo_Project.Scripts.ProductsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Demo_Project.Scripts.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Demo_Project.Scripts.PurchaseTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterTest</span>
                 <br/>
@@ -739,163 +695,155 @@ return data;
               <div class="chronological-class-name">com.Demo_Project.Scripts.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifySigninInvalidUserInvalidpass(ajiabraham, 123456)</span>
-                <span class="method-start">17912 ms</span>
+                <span class="method-start">18420 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySigninInvalidUserInvalidpass status=SUCCESS method=LoginTest.verifySigninInva...)</span>
-                <span class="method-start">19966 ms</span>
+                <span class="method-start">20374 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifySigninInvalidUserValidpass(secondoption, 123123)</span>
-                <span class="method-start">20082 ms</span>
+                <span class="method-start">20605 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySigninInvalidUserValidpass status=SUCCESS method=LoginTest.verifySigninInvali...)</span>
-                <span class="method-start">21652 ms</span>
+                <span class="method-start">22458 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifySigninValidUserInvalidpass(admin, 963852)</span>
-                <span class="method-start">21773 ms</span>
+                <span class="method-start">22566 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySigninValidUserInvalidpass status=SUCCESS method=LoginTest.verifySigninValidU...)</span>
-                <span class="method-start">23321 ms</span>
+                <span class="method-start">24333 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifySigninValidUserValidpass(admin, 123123)</span>
-                <span class="method-start">23414 ms</span>
+                <span class="method-start">24474 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySigninValidUserValidpass status=SUCCESS method=LoginTest.verifySigninValidUse...)</span>
-                <span class="method-start">26710 ms</span>
+                <span class="method-start">30354 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Demo_Project.Scripts.ProductsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">clickendTour</span>
-                <span class="method-start">26721 ms</span>
+                <span class="method-start">30369 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=clickendTour status=SUCCESS method=ProductsTest.clickendTour()[pri:5, instance:com....)</span>
-                <span class="method-start">27404 ms</span>
+                <span class="method-start">30910 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyProducts</span>
-                <span class="method-start">27407 ms</span>
+                <span class="method-start">30913 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyProducts status=SUCCESS method=ProductsTest.verifyProducts()[pri:6, instance:...)</span>
-                <span class="method-start">29858 ms</span>
+                <span class="method-start">33406 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">selectProductType</span>
-                <span class="method-start">29860 ms</span>
+                <span class="method-start">33408 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=selectProductType status=SUCCESS method=ProductsTest.selectProductType()[pri:7, ins...)</span>
-                <span class="method-start">30315 ms</span>
+                <span class="method-start">33828 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifySearch</span>
-                <span class="method-start">30318 ms</span>
+                <span class="method-start">33830 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySearch status=SUCCESS method=ProductsTest.verifySearch()[pri:8, instance:com....)</span>
-                <span class="method-start">32928 ms</span>
+                <span class="method-start">36409 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyAddproduct</span>
-                <span class="method-start">32933 ms</span>
+                <span class="method-start">36412 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyAddproduct status=SUCCESS method=ProductsTest.verifyAddproduct()[pri:9, insta...)</span>
-                <span class="method-start">37968 ms</span>
+                <span class="method-start">43351 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyImageUpload</span>
-                <span class="method-start">37971 ms</span>
+                <span class="method-start">43358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyImageUpload status=SUCCESS method=ProductsTest.verifyImageUpload()[pri:10, in...)</span>
-                <span class="method-start">41553 ms</span>
+                <span class="method-start">46935 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyBrands</span>
-                <span class="method-start">41555 ms</span>
+                <span class="method-start">46937 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyBrands status=SUCCESS method=ProductsTest.verifyBrands()[pri:11, instance:com...)</span>
-                <span class="method-start">43973 ms</span>
+                <span class="method-start">49439 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyAddDetails</span>
-                <span class="method-start">43975 ms</span>
+                <span class="method-start">49441 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyAddDetails status=SUCCESS method=ProductsTest.verifyAddDetails()[pri:12, inst...)</span>
-                <span class="method-start">44433 ms</span>
+                <span class="method-start">49976 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifySaveDetails</span>
-                <span class="method-start">44434 ms</span>
+                <span class="method-start">49978 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifySaveDetails status=SUCCESS method=ProductsTest.verifySaveDetails()[pri:13, in...)</span>
-                <span class="method-start">44605 ms</span>
+                <span class="method-start">50183 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Demo_Project.Scripts.PurchaseTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyPurchase</span>
-                <span class="method-start">44608 ms</span>
+                <span class="method-name">verifyNagivatetoPurchasePage</span>
+                <span class="method-start">50185 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyPurchase status=SKIP method=PurchaseTest.verifyPurchase()[pri:14, instance:co...)</span>
-                <span class="method-start">45338 ms</span>
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyNagivatetoPurchasePage status=SKIP method=PurchaseTest.verifyNagivatetoPurcha...)</span>
+                <span class="method-start">50844 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">verifyPurchase</span>
-                <span class="method-start">45341 ms</span>
+                <span class="method-name">verifyNagivatetoPurchasePage</span>
+                <span class="method-start">50847 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyPurchase status=SKIP method=PurchaseTest.verifyPurchase()[pri:14, instance:co...)</span>
-                <span class="method-start">46645 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyPurchase</span>
-                <span class="method-start">46646 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyPurchase status=SUCCESS method=PurchaseTest.verifyPurchase()[pri:14, instance...)</span>
-                <span class="method-start">48612 ms</span>
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyNagivatetoPurchasePage status=SUCCESS method=PurchaseTest.verifyNagivatetoPur...)</span>
+                <span class="method-start">53854 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyElementTable</span>
-                <span class="method-start">48615 ms</span>
+                <span class="method-start">53856 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyElementTable status=SUCCESS method=PurchaseTest.verifyElementTable()[pri:15, ...)</span>
-                <span class="method-start">49283 ms</span>
+                <span class="method-start">54523 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Demo_Project.Scripts.SettingsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyCheckSettings</span>
-                <span class="method-start">49285 ms</span>
+                <span class="method-start">54526 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyCheckSettings status=SUCCESS method=SettingsTest.verifyCheckSettings()[pri:16...)</span>
-                <span class="method-start">51857 ms</span>
+                <span class="method-start">57688 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Demo_Project.Base.DemoTestBase</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">51859 ms</span>
+                <span class="method-start">57689 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

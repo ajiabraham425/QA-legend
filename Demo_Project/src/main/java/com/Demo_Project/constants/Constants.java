@@ -7,9 +7,9 @@ public class Constants {
 
 	public static final String sheet1 = "Login Cred";
 
-	public static final String fileupload = "\"C:\\Users\\Aji Abraham\\Downloads\\Purchase Return - h.xlsx\"";
+	public static final String fileupload = System.getProperty("user.dir")+"\\src\\main\\resources\\Data\\Purchase Return - h.xlsx\\";
 
-	public static final String phtoUpload = "\"C:\\Users\\Aji Abraham\\Downloads\\Sign.jpeg\"";
+	public static final String phtoUpload = System.getProperty("user.dir")+"\\src\\main\\resources\\Data\\Sign.jpeg";
 
 	public static final String searchName = "samsung";
 

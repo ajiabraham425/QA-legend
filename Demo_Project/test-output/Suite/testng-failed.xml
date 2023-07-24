@@ -10,8 +10,8 @@
       <class name="com.Demo_Project.Scripts.PurchaseTest">
         <methods>
           <include name="beforeTest"/>
+          <include name="verifyNagivatetoPurchasePage"/>
           <include name="afterTest"/>
-          <include name="verifyPurchase"/>
           <include name="takeScreenShotOnFailure"/>
         </methods>
       </class> <!-- com.Demo_Project.Scripts.PurchaseTest -->
