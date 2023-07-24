@@ -123,8 +123,8 @@ public class ProductPage {
 	}
 
 	public String fileAssert() {
-		WaitUtilities.waitForElementToBeVisible(driver, fileName);
 		String fileText = fileName.getText();
+		WaitUtilities.waitForElementToBeVisible(driver, fileName);
 		return fileText;
 	}
 
