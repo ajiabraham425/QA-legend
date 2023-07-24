@@ -58,7 +58,7 @@ public class ProductPage {
 
 	@FindBy(xpath = "//div[@class='btn btn-primary btn-file']")
 	WebElement phtoUpload;
-	@FindBy(xpath = "//div[@class='form-control file-caption  kv-fileinput-caption']")
+	@FindBy(xpath = "//div[@class='file-caption-name']")
 	WebElement fileName;
 
 	public ProductPage(WebDriver driver) {
